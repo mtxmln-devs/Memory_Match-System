@@ -10,7 +10,8 @@ A classic card-matching memory game built with **Python** and **Pygame**.
 
 --- 
 
-<div align="center">    
+<div align="center">   
+    
 [▶ How to Run](#-setup--installation) · [🎮 How to Play](#-how-to-play) · [🏗 Architecture](#-architecture) 
 </div>
 
