@@ -3,12 +3,15 @@ A classic card-matching memory game built with **Python** and **Pygame**.
 
 ![image alt](https://github.com/mtxmln-devs/Memory_Match-System/blob/1ee9d8cf0de6dfb0b35d6a166022b53bc0cfbbc7/game.png)
 
-Flip cards, find all 8 pairs, and beat your best time! 🎮
+--- 
 
-<div align="center">
-    
+## Flip cards, find all 8 pairs, and beat your best time! 🎮
+
+
+--- 
+
+<div align="center">    
 [▶ How to Run](#-setup--installation) · [🎮 How to Play](#-how-to-play) · [🏗 Architecture](#-architecture) 
-
 </div>
 
 ---
