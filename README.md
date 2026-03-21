@@ -28,8 +28,6 @@ A classic card-matching memory game built with **Python** and **Pygame**.
 - ⏳ **Mismatch hold** — non-matching cards stay visible for 900ms before flipping back
 - 📊 **Live HUD** — move counter, MM:SS timer, pairs-found tracker
 - 🏆 **Win screen** — animated rotating stars with final move count and time
-- 🔊 **Sound effects** — flip and match sounds (optional `.mp3`/`.wav` files)
-- 🖼 **Custom card images** — drop PNG files in a custom images folder to replace emoji symbols
 - ✅ **21 unit tests** — located in `src/test_logic.py`, headless, no display required
 
 ---
