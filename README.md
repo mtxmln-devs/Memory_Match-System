@@ -329,6 +329,8 @@ python src/main.py
 ---
 
 <div align="center">
-Made with ❤️ by [mtxmln-devs](https://github.com/mtxmln-devs)
-⭐ Star this repo if you found it helpful!
+
+  - Made with ❤️ by [mtxmln-devs](https://github.com/mtxmln-devs)
+
+-⭐ Star this repo if you found it helpful!
 </div>
