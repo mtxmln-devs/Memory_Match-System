@@ -5,27 +5,14 @@ A classic card-matching memory game built with **Python** and **Pygame**.
 
 Flip cards, find all 8 pairs, and beat your best time! 🎮
 
-[▶ How to Run](#-setup--installation) · [🎮 How to Play](#-how-to-play) · [🏗 Architecture](#-architecture) · [🧪 Tests](#-running-tests)
+<div align="center">
+    
+[▶ How to Run](#-setup--installation) · [🎮 How to Play](#-how-to-play) · [🏗 Architecture](#-architecture) 
 
 </div>
 
 ---
 
-## 📸 Preview
-
-```
-┌─────────────────────────────────────────┐
-│  ⏱ 00:42    🎯 Moves: 14    ✅ 6/8 pairs │
-├─────────────────────────────────────────┤
-│                                         │
-│  [🦊][🐬][??][??]                       │
-│  [??][🌙][🌙][??]                       │
-│  [⚡][??][🦊][??]                       │
-│  [??][🐬][??][⚡]                       │
-│                                         │
-│        R — Restart  •  ESC — Quit       │
-└─────────────────────────────────────────┘
-```
 
 ---
 
@@ -71,7 +58,7 @@ Memory_Match-System/
 ## 🚀 Setup & Installation
 
 ### Prerequisites
-- **Python 3.8+** — download from [python.org](https://python.org) *(check "Add Python to PATH" on Windows)*
+- **Python 3.11.9+** — download from [python.org](https://python.org) *(check "Add Python to PATH" on Windows)*
 - **VS Code** *(recommended)* — download from [code.visualstudio.com](https://code.visualstudio.com)
 
 ---
