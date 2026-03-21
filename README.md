@@ -1,12 +1,4 @@
 # 🃏 Memory Match System
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
-![Pygame](https://img.shields.io/badge/Pygame-2.5.2-green?style=for-the-badge&logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
 A classic card-matching memory game built with **Python** and **Pygame**.  
 Flip cards, find all 8 pairs, and beat your best time! 🎮
 
