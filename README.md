@@ -3,32 +3,40 @@ A classic card-matching memory game built with **Python** and **Pygame**.
 
 ![image alt](https://github.com/mtxmln-devs/Memory_Match-System/blob/1ee9d8cf0de6dfb0b35d6a166022b53bc0cfbbc7/game.png)
 
---- 
-
 ## Flip cards, find all 8 pairs, and beat your best time! 🎮
 
-
 --- 
+<div align="center">
 
-<div align="center">   
-    
-[▶ How to Run](#-setup--installation) · [🎮 How to Play](#-how-to-play) · [🏗 Architecture](#-architecture) 
+[▶ How to Run](#-setup--installation) · [🎮 How to Play](#-how-to-play) · [🏗 Architecture](#-architecture) · [🧪 Tests](#-running-tests)
+
 </div>
-
 ---
 
 
 ---
-
 ## ✨ Features
 
-- 🎴 **4×4 grid** — 16 cards, 8 matching pairs, shuffled every game
+- 🎴 **Logic-Driven Gameplay** — core mechanics focused on pattern recognition and memory recall
+- 🔀 **Structured Layout** — standardized 4×4 grid for a balanced level of difficulty
 - 🔄 **Smooth flip animation** — pseudo-3D card flip using surface squishing
 - 🧠 **5-state card machine** — `FACE_DOWN → FLIPPING_UP → FACE_UP → FLIPPING_DOWN → MATCHED`
 - ⏳ **Mismatch hold** — non-matching cards stay visible for 900ms before flipping back
-- 📊 **Live HUD** — move counter, MM:SS timer, pairs-found tracker
+- 📊 **Performance Tracking** — live timer and pair counter to track efficiency
 - 🏆 **Win screen** — animated rotating stars with final move count and time
+- 🎨 **Visual Design** — dark-themed, high-contrast UI optimized for extended sessions and reduced eye strain
 - ✅ **21 unit tests** — located in `src/test_logic.py`, headless, no display required
+
+--- 
+
+
+### Intuitive Controls
+
+| Key / Action | Effect |
+|---|---|
+| `Left Click` | Flip a card |
+| `R` | Restart the game instantly |
+| `ESC` | Exit the application |
 
 ---
 
@@ -57,10 +65,21 @@ Memory_Match-System/
 
 ---
 
+## 🛠️ Tech Stack
+
+| | |
+|---|---|
+| **Language** | Python 3.8+ |
+| **Library** | Pygame 2.5.2 |
+| **Environment** | Windows 11 / VS Code |
+| **Testing** | unittest / pytest (headless) |
+
+---
+
 ## 🚀 Setup & Installation
 
 ### Prerequisites
-- **Python 3.11.9+** — download from [python.org](https://python.org) *(check "Add Python to PATH" on Windows)*
+- **Python 3.8+** — download from [python.org](https://python.org) *(check "Add Python to PATH" on Windows)*
 - **VS Code** *(recommended)* — download from [code.visualstudio.com](https://code.visualstudio.com)
 
 ---
@@ -138,12 +157,12 @@ python src/main.py
 
 ## 🎮 How to Play
 
-1. All **16 cards** start face-down in a 4×4 grid
-2. **Click** any card to flip it and reveal its symbol
-3. **Click a second card** to try to find its match
-4. ✅ **Match** — both cards turn green and stay face-up permanently
-5. ❌ **No match** — cards are shown for 0.9 seconds, then flip back face-down
-6. Match all **8 pairs** to win!
+1. Launch the application to generate a **randomized grid** of cards
+2. **Click on any two cards** to reveal their hidden symbols
+3. ✅ **Match** — both cards turn green and stay face-up permanently
+4. ❌ **No match** — cards are shown for 0.9 seconds, then flip back face-down
+5. Match all **8 pairs** in the shortest time possible to win!
+6. Use the on-screen shortcuts to **reset the board** or **exit**
 7. The **win screen** shows your total moves and time — press `R` to play again
 
 ### Controls
@@ -153,6 +172,35 @@ python src/main.py
 | `Left Click` | Flip a card |
 | `R` | Restart the game (new shuffle) |
 | `ESC` | Quit |
+
+---
+
+## 🛠️ Development & Algorithms
+
+The game utilizes a few core programming concepts to ensure every session is unique and fair:
+
+### Fisher-Yates Shuffle
+To ensure true randomness, the card deck is shuffled using a localized version of the **Fisher-Yates algorithm**. This guarantees that each permutation of the 4×4 grid is equally likely — no bias, no repeating patterns.
+
+```python
+random.shuffle(deck)   # Python's implementation of Fisher-Yates
+```
+
+### State Management
+The game tracks three primary states for each card: `Hidden`, `Flipped`, and `Matched`. Logic gates prevent more than two cards from being `Flipped` simultaneously, enforcing the core game rule.
+
+```
+Hidden ──► Flipped ──► Matched  ✅
+             │
+             └──► Hidden  ❌ (mismatch, after 900ms hold)
+```
+
+### Coordinate Mapping
+Card positions are calculated **dynamically** using the formula:
+
+$$( x,\ y ) = \bigl( col \times spacing + offset\_x,\ \ row \times spacing + offset\_y \bigr)$$
+
+This keeps the grid perfectly centered on the window regardless of card size or margin changes. Modifying `constants.py` is all that's needed to resize the entire board.
 
 ---
 
@@ -271,19 +319,16 @@ python src/main.py
 
 
 
+
 ---
 
 ## 🙌 Acknowledgements
-
 - Built with [Pygame](https://www.pygame.org/)
 - Emoji rendering via system fonts (Segoe UI Emoji on Windows)
 
 ---
 
 <div align="center">
-
 Made with ❤️ by [mtxmln-devs](https://github.com/mtxmln-devs)
-
 ⭐ Star this repo if you found it helpful!
-
 </div>
