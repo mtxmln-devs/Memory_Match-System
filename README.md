@@ -16,7 +16,6 @@ A classic card-matching memory game built with **Python** and **Pygame**.
 
 
 </div>
----
 
 
 ---
