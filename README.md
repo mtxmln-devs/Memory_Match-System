@@ -6,9 +6,11 @@ A classic card-matching memory game built with **Python** and **Pygame**.
 ## Flip cards, find all 8 pairs, and beat your best time! 🎮
 
 --- 
+
 <div align="center">
 <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
-
+  
+---
 
 [▶ How to Run](#-setup--installation) · [🎮 How to Play](#-how-to-play) · [🏗 Architecture](#-architecture) · [🧪 Tests](#-running-tests)
 
